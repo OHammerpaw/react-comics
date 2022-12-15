@@ -87,7 +87,13 @@ const PublisherIndex = ({ user, msgAlert }) => {
       </Link>
       <h1 className="index-header">Publishers</h1>
       <Container className="comic-panel">
-        <Card.Group centered>{PublisherCards}</Card.Group>
+        <Card.Group 
+            centered
+            stackable
+            itemsPerRow={4} 
+            >
+              {PublisherCards}
+          </Card.Group>
       </Container>
     </>
   );
